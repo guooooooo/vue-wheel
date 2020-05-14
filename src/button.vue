@@ -1,5 +1,7 @@
 <template>
-  <button class="w-button"><slot></slot></button>
+  <button class="w-button">
+    <slot></slot>
+  </button>
 </template>
 <script>
   export default {
