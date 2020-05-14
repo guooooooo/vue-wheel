@@ -1,6 +1,7 @@
 <template>
-  <button class="w-button" :class="{[`icon-${iconPosition}`]: iconPosition==='right'}">
-    <w-icon class="icon" v-if="icon" :name="icon"></w-icon>
+  <button class="w-button" :class="{[`icon-${iconPosition}`]: iconPosition==='right'}" @click="$emit('click')">
+    <w-icon class="icon" v-if="icon && !loading" :name="icon"></w-icon>
+    <w-icon class="icon loading" v-if="loading" name="loading"></w-icon>
     <div class="content">
       <slot/>
     </div>
@@ -22,11 +23,23 @@ export default {
         }
         return true
       }
+    },
+    loading: {
+      type: Boolean,
+      default: false
     }
   }
 }
 </script>
 <style lang="scss">
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   .w-button {
     height: var(--button-height);
     padding: 0 1em;
@@ -63,6 +76,9 @@ export default {
         margin-right: 0;
         margin-left: .1em;
       }
+    }
+    .loading {
+      animation: spin 2s infinite linear;
     }
   }
 </style>
