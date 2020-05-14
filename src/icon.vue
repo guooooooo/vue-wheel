@@ -15,6 +15,5 @@ export default {
 .w-icon {
   width: 1em;
   height: 1em;
-  vertical-align: middle;
 }
 </style>
