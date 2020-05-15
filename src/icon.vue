@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "w-icon",
+  name: "wheel-icon",
   props: ["name"]
 };
 </script>
