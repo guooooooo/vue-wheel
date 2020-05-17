@@ -4,21 +4,36 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" href="src/global.scss">
+  <style>
+    .box {
+      margin: 20px;
+    }
+  </style>
 </head>
 <body>
 
 <div id="app">
-  <w-button icon="setting" :loading="loading" @click="loading = !loading" icon-position="right">
-    按钮
-  </w-button>
-  <w-button :loading="true">按钮</w-button>
-  <w-button icon="setting" :loading="true">按钮</w-button>
-  <w-icon name="upward"></w-icon>
-  <w-button-group>
-    <w-button icon="back">后退</w-button>
-    <w-button>更多</w-button>
-    <w-button icon="next" icon-position="right">前进</w-button>
-  </w-button-group>
+  <div class="box">
+    <w-input value="张三"></w-input>
+    <w-input value="lisa" disabled></w-input>
+    <w-input value="lisa" readonly></w-input>
+  </div>
+  <div class="box">
+    <w-input value="error" error="格式不正确"></w-input>
+  </div>
+  <div class="box">
+    <w-button icon="setting" :loading="loading" @click="loading = !loading" icon-position="right">
+      按钮
+    </w-button>
+    <w-button :loading="true">按钮</w-button>
+    <w-button icon="setting" :loading="true">按钮</w-button>
+    <w-icon name="upward"></w-icon>
+    <w-button-group>
+      <w-button icon="back">后退</w-button>
+      <w-button>更多</w-button>
+      <w-button icon="next" icon-position="right">前进</w-button>
+    </w-button-group>
+  </div>
 </div>
 <script src="./src/app.js"></script>
 </body>
