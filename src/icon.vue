@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import './icon-svg'
 export default {
   name: "wheel-icon",
   props: ["name"]
