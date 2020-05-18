@@ -14,7 +14,7 @@
 
 <div id="app">
   <div class="box">
-    <w-input value="张三"></w-input>
+    <w-input value="张三" @change="inputChange" @input="inputInput" @focus="inputFocus" @blur="inputBlur"></w-input>
     <w-input value="lisa" disabled></w-input>
     <w-input value="lisa" readonly></w-input>
   </div>
