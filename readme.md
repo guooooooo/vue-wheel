@@ -3,7 +3,18 @@
 
 ## 介绍
 
-个人学习及实践 Vue 过程中，封装组件库。
+个人学习 Vue 以及常用组件的封装。
+
+### 工程化
+
+- 使用karma（测试运行器） + mocha（单元测试框） + chai（断言库）做单元测试
+- 使用Travis CI进行持续集成
+
+### 实现组件
+
+- Icon
+- Button / ButtonGroup
+- Input
 
 ## 开始使用
 
