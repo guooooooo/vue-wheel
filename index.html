@@ -8,59 +8,39 @@
     .box {
       margin: 20px;
     }
+    .demo {
+      background: #ddd;
+      border: 1px solid #666;
+      height: 100px;
+    }
   </style>
 </head>
 <body>
 
 <div id="app">
-  <div style="border: 1px solid black;">
-    <w-row gutter="20">
-      <w-col>1</w-col>
-      <w-col>2</w-col>
-    </w-row>
-    <w-row align="right">
-      <w-col>1</w-col>
-      <w-col>2</w-col>
-      <w-col>3</w-col>
-    </w-row>
-    <w-row align="center">
-      <w-col>1</w-col>
-      <w-col>2</w-col>
-      <w-col>3</w-col>
-      <w-col>4</w-col>
-    </w-row>
-    <w-row>
-      <w-col span="2">1</w-col>
-      <w-col span="22">11</w-col>
-    </w-row>
-    <w-row>
-      <w-col span="4">1</w-col>
-      <w-col span="20">11</w-col>
-    </w-row>
-    <w-row>
-      <w-col span="2">1</w-col>
-      <w-col span="20" offset="2">11</w-col>
-    </w-row>
-    <w-row>
-      <w-col span="4">1</w-col>
-      <w-col span="20">11</w-col>
-    </w-row>
-    <w-row>
-      <w-col span="4">1</w-col>
-      <w-col span="18" offset="2">11</w-col>
-    </w-row>
-    <w-row>
-      <w-col span="4">1</w-col>
-      <w-col span="8" offset="2">11</w-col>
-      <w-col span="8" offset="2">11</w-col>
-    </w-row>
-    <w-row gutter="20">
-      <w-col span="4">1</w-col>
-      <w-col span="4" offset="6">11</w-col>
-      <w-col span="8" offset="2">11</w-col>
-    </w-row>
-  </div>
-  <hr>
+  <w-row>
+    <!-- <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
+      <div class="demo"></div>
+    </w-col>
+    <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
+      <div class="demo"></div>
+    </w-col>
+    <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
+      <div class="demo"></div>
+    </w-col>
+    <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
+      <div class="demo"></div>
+    </w-col>
+    <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
+      <div class="demo"></div>
+    </w-col>
+    <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
+      <div class="demo"></div>
+    </w-col> -->
+    <w-col span="4" offset="20" :narrow-pc="{span:12, offset:12}">
+      <div class="demo"></div>
+    </w-col>
+  </w-row>
   <div class="box">
     <w-input value="张三" @change="inputChange" @input="inputInput" @focus="inputFocus" @blur="inputBlur"></w-input>
     <w-input value="lisa" disabled></w-input>
