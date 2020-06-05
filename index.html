@@ -5,12 +5,21 @@
   <title></title>
   <link rel="stylesheet" href="src/global.scss">
   <style>
-    .box {
-      margin: 20px;
-    }
     .demo {
-      background: #ddd;
+      /* background: #ddd; */
       border: 1px solid #666;
+      min-height: 100px;
+    }
+    .sider {
+      background: #333;
+      width: 200px;
+    }
+    .header {
+      background: #999;
+      height: 100px;
+    }
+    .footer {
+      background: #ccc;
       height: 100px;
     }
   </style>
@@ -18,30 +27,30 @@
 <body>
 
 <div id="app">
-  <w-row>
+  <!-- <w-row> -->
     <!-- <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
-      <div class="demo"></div>
+      <div></div>
     </w-col>
     <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
-      <div class="demo"></div>
+      <div></div>
     </w-col>
     <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
-      <div class="demo"></div>
+      <div></div>
     </w-col>
     <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
-      <div class="demo"></div>
+      <div></div>
     </w-col>
     <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
-      <div class="demo"></div>
+      <div></div>
     </w-col>
     <w-col span="24" :narrow-pc="{span:8}" :pc="{span:6}" :ipad="{span:12}">
-      <div class="demo"></div>
+      <div></div>
     </w-col> -->
-    <w-col span="4" offset="20" :narrow-pc="{span:12, offset:12}">
-      <div class="demo"></div>
+    <!-- <w-col span="4" offset="20" :narrow-pc="{span:12, offset:12}">
+      <div></div>
     </w-col>
-  </w-row>
-  <div class="box">
+  </w-row> -->
+  <!-- <div class="box">
     <w-input value="张三" @change="inputChange" @input="inputInput" @focus="inputFocus" @blur="inputBlur"></w-input>
     <w-input value="lisa" disabled></w-input>
     <w-input value="lisa" readonly></w-input>
@@ -62,7 +71,22 @@
       <w-button>更多</w-button>
       <w-button icon="next" icon-position="right">前进</w-button>
     </w-button-group>
-  </div>
+  </div> -->
+  <w-layout style="height: 100vh">
+    <w-header>header</w-header>
+    <w-layout>
+      <w-sider>
+        <p>1111</p>
+      </w-sider>
+      <w-content>
+        <p>1111</p>
+        <p>1111</p>
+        <p>1111</p>
+        <p>1111</p>
+        <p>1111</p>
+      </w-content>
+    </w-layout>
+  </w-layout>
 </div>
 <script src="./src/app.js"></script>
 </body>
